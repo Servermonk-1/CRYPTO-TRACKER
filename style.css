@@ -1,0 +1,140 @@
+b@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
+
+body {
+	background: #0D1117;
+	color: #C9D1D9;
+	font-family: 'Inter', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	padding: 60px 20px;
+	margin: 0;
+	min-height: 100vh;
+}
+
+.container {
+	width: 100%;
+	max-width: 800px;
+	text-align: center;
+}
+
+.tracker-title {
+	font-size: 2.5em;
+	font-weight: 700;
+	color: #3333df;
+	margin-bottom: 30px;
+	letter-spacing: -0.5px;
+}
+
+.emoji {
+	margin-right: 5px;
+}
+
+.search-bar-group {
+	display: flex;
+	gap: 10px;
+	margin-bottom: 30px;
+}
+
+#searchInput {
+	flex-grow: 1;
+	padding: 12px 15px;
+	border: 1px solid #30363D;
+	border-radius: 8px;
+	background: #161B22;
+	color: #F0F6FC;
+	font-size: 1em;
+	transition: border-color 0.2s;
+}
+
+#searchInput::placeholder {
+	color: #8B949E;
+}
+
+#searchInput:focus {
+	outline: none;
+	border-color: #2D9CDB;
+	box-shadow: 0 0 0 3px rgba(45, 156, 219, 0.3);
+}
+
+#searchBtn {
+	background: #58A6FF;
+	border: none;
+	padding: 12px 20px;
+	border-radius: 8px;
+	cursor: pointer;
+	font-weight: 600;
+	color: #0D1117;
+	transition: background 0.2s, transform 0.1s;
+}
+
+#searchBtn:hover {
+	background: #79B8FF;
+}
+
+.crypto-list {
+	margin-top: 20px;
+}
+
+.crypto-card {
+	display: grid;
+	grid-template-columns: 2fr 1fr 1fr;
+	gap: 15px;
+	align-items: center;
+	background: #6b8dbd;
+	padding: 18px 25px;
+	border-radius: 12px;
+	margin: 12px 0;
+	border-left: 5px solid transparent;
+	transition: background 0.2s, border-left 0.2s;
+	text-align: left;
+}
+
+.crypto-card:hover {
+	background: #1A222B;
+	border-left-color: #58A6FF;
+}
+
+.left {
+	display: flex;
+	align-items: center;
+	font-weight: 600;
+}
+
+.crypto-card img {
+	width: 30px;
+	height: 30px;
+	margin-right: 15px;
+	border-radius: 50%;
+}
+
+.right {
+	display: flex;
+	justify-content: flex-end;
+	gap: 20px;
+	font-weight: 600;
+}
+
+.right span:first-child {
+	color: #F0F6FC;
+	font-weight: 700;
+}
+
+.green {
+	color: #3FB950;
+	font-weight: 700;
+}
+
+.red {
+	color: #F85149;
+	font-weight: 700;
+}
+
+.error-message {
+	color: #F85149;
+	margin-top: 20px;
+	padding: 10px;
+	border: 1px dashed #F85149;
+	border-radius: 6px;
+	background: rgba(248, 81, 73, 0.1);
+}
