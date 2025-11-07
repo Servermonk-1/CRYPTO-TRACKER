@@ -63,3 +63,8 @@ searchInput.addEventListener("keydown", (e) => {
 
 // Load default coins on page start
 window.onload = () => fetchCryptoList();
+
+// Back to dashboard function
+function goBack() {
+	window.location.href = '../index.html'; // Adjust path as needed
+}
